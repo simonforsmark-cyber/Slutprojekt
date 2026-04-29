@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DTM Shops</title>
+    <title>Cars</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cars.css" />
     <link rel="icon" type="image/png" href="images/loggo.png" />
   </head>
   <body>
@@ -12,40 +13,19 @@
       <a href="index.html"
         ><img class="loggo" src="images/loggo.png" alt="Logga"
       /></a>
+
       <ul class="Menu">
         <li><a href="#">Porsche</a></li>
         <li><a href="#">Audi</a></li>
         <li><a href="#">BMW</a></li>
       </ul>
-
-      <ul class="Shop">
-        <li><a href="cars.html">SHOP</a></li>
-        <li><a href="#">CART</a></li>
-      </ul>
     </nav>
-    <div class="banner">
-      <img src="images/HeroDTM.gif" alt="DTM Banner" />
-    </div>
-    <h1>DTM Shop</h1>
-    <div class="wrapper">
-      <div class="banner-text">
-        <h2>DTM 2025 Europe Tournament</h2>
-        <p>
-          Välkommen till DTM 2025 Europe Tournament! Detta är ett spännande
-          motorsportevenemang som samlar de bästa förarna och teamen från hela
-          Europa för att tävla i höghastighetslopp. Turneringen innehåller en
-          serie spännande lopp som hålls på ikoniska banor över hela kontinenten
-          och visar upp förarnas skicklighet och precision i deras kamp om
-          seger. Fans kan förvänta sig intensiv konkurrens, strategiska
-          depåstopp och hisnande ögonblick på banan. Oavsett om du är en inbiten
-          motorsportentusiast eller ett vanligt fan, lovar DTM 2025 Europe
-          Tournament att leverera oförglömlig racingaction och oförglömliga
-          minnen.
-        </p>
-      </div>
+
+    <div class="shop-layout wrapper">
       <div class="Bilar">
         <div class="Bilder">
           <img src="images/audi.jpg" />
+
           <div>
             <p id="Audi">
               Typ: 5.2L V10 Naturligt aspirerad, Ca 585 hk, 550 Nm, 6-växlad
@@ -57,32 +37,92 @@
             <a class="shop-btn" href="cars.html">Köp</a>
           </div>
         </div>
+
         <div class="Bilder">
           <img src="images/bmw.jpg" />
+
           <div>
-            <p id="Bmw">
-              Typ: 3.0L rak 6-cyl, Twin-turbo, Ca 590 hk, 6-växlad sekventiell
-              racingväxellåda.</p>
-            <p>Drivning: bakhjulsdrift, Differential: justerbar racing-diff</p>
+            <p id="Bmw">Typ: 3.0L rak 6-cyl, Twin-turbo, Ca 590 hk</p>
+            <p>Drivning: bakhjulsdrift</p>
             <p>0-100 ca 3.0 sekunder</p>
             <p>Pris: 3 000 000 SEK</p>
             <a class="shop-btn" href="cars.html">Köp</a>
           </div>
         </div>
+
         <div class="Bilder">
           <img src="images/porsche.jpg" />
 
           <div>
-            <p id="Porsche">
-              Typ: 4.0L boxersexa, Naturligt aspirerad, Ca 550–565 hk, 6-växlad
-              sekventiell,</p>
-            <p>Bakhjulsdrift, Mekanisk diff med justerbar preload.</p>
+            <p id="Porsche">Typ: 4.0L boxersexa</p>
+            <p>Bakhjulsdrift</p>
             <p>0-100 ca 2.6-3.1 sekunder</p>
             <p>Pris: 3 250 000 SEK</p>
             <a class="shop-btn" href="cars.html">Köp</a>
           </div>
         </div>
       </div>
+
+      <table class="car-table">
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Audi</th>
+            <th>BMW</th>
+            <th>Porsche</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Pris</td>
+            <td>3 000 000 SEK</td>
+            <td>3 000 000 SEK</td>
+            <td>3 250 000 SEK</td>
+          </tr>
+          <tr>
+            <td>Växellåda</td>
+            <td>6-växlad sekventiell</td>
+            <td>6-växlad sekventiell</td>
+            <td>6-växlad sekventiell</td>
+            
+          </tr>
+
+          <tr>
+            <td>Hästkrafter</td>
+            <td>585 hk</td>
+            <td>590 hk</td>
+            <td>565 hk</td>
+          </tr>
+
+          <tr>
+            <td>Drivning</td>
+            <td>AWD</td>
+            <td>RWD</td>
+            <td>RWD</td>
+          </tr>
+
+          <tr>
+            <td>0-100 km/h</td>
+            <td>2.5 sek</td>
+            <td>3.0 sek</td>
+            <td>2.8 sek</td>
+          </tr>
+
+          <tr>
+            <td>Laptimes Nürburgring</td>
+            <td>6:44.8</td>
+            <td>6:46.2</td>
+            <td>6:45.1</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="4">Alla priser inkluderar racingpaket</td>
+          </tr>
+        </tfoot>
+      </table>
     </div>
 
     <footer class="bas-footer">
@@ -96,7 +136,6 @@
         </div>
         <div>
           <h4>Kontakt</h4>
-          <a class="kontakt-btn" href="kontakt.html">Kontakta oss</a>
           <p>Mejl: info@dtm-europe.se<br />Tel: 08-678 901</p>
         </div>
       </div>
