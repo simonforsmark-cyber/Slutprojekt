@@ -1,5 +1,6 @@
 body {
-    background-color: black;
+    background-color: white;
+    color: black;
     margin: 0;
     font-family: Arial, sans-serif;
     border: black 15px solid;
@@ -98,7 +99,7 @@ h1 {
     gap: 20px;
 }
 .wrapper {
-    color: rgb(151, 151, 151);
+    color: inherit;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -158,4 +159,35 @@ button:hover {
 .kontakt-btn:hover {
     background-color: orange;
     transform: scale(1.05);
+}
+
+body.dark {
+    background-color: black;
+    color: white;
+}
+body.dark nav {
+    background-color: black;
+}
+
+body.dark .wrapper {
+    background: #111;
+}
+
+body.dark .bas-footer {
+    background: #000;
+}
+.dark-btn {
+    padding: 8px 10px;
+    font-size: 18px;
+    background-color: grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.dark-btn:hover {
+    background-color: darkgrey;
+    transform: scale(1.05);
+    transition: 0.3s;
 }
